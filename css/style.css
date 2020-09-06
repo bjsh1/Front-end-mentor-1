@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background: url("../images/bg-mobile.png");
+  background-size: cover;
+  position: relative;
+}
+
+section {
+  height: 60vh;
+  width: 85vw;
+  margin: 20vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+
+.top-container {
+  background-color: #1d2c67;
+  height: 50%;
+  border-radius: 0.75rem;
+  border-top-right-radius: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  padding-right: auto;
+}
+
+.top-container .icons {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-container .icon img {
+  height: 80%;
+  width: 100%;
+}
+
+.top-container .icon {
+  margin-right: 1.25rem;
+  background-color: #0c122c;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+}
+
+.bottom-container {
+  height: 50%;
+  margin-top: 2rem;
+  color: #dddbff;
+  position: relative;
+}
+
+.bottom-container .top-contents {
+  background-color: #1d2c67;
+  height: 75%;
+  border-radius: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-container p span {
+  font-weight: 700;
+}
+
+.bottom-container .progress-bar {
+  background: #0c122c;
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-container .progress {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  height: 1.25rem;
+  width: 75%;
+  border-radius: 1rem;
+  left: 2px;
+}
+
+.bottom-container .progress img {
+  position: absolute;
+  height: 13px;
+  right: 2px;
+  top: 2px;
+}
+
+.bottom-container .progress-caption {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bottom-container .bottom-contents {
+  height: 25%;
+  width: 100%;
+  position: absolute;
+  bottom: 16%;
+}
+
+.bottom-container .bottom-contents p {
+  text-align: center;
+  background: #dddbff;
+  width: 60%;
+  margin: auto;
+  cursor: pointer;
+  background: #dddbff;
+  color: #1d2c67;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.bottom-container .triangle-path {
+  position: absolute;
+  background-color: #dddbff;
+  width: 8%;
+  height: 70%;
+  right: 5%;
+  bottom: 150%;
+}
+
+.bottom-container .bottom-contents span {
+  font-size: 40px;
+  color: #0c122c;
+}
+
+.bottom-container .bottom-contents p sup {
+  color: #848794;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-left: .5rem;
+}
+
+.desktop-background {
+  position: absolute;
+  background: url("../images/bg-desktop.png") no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.attribution {
+  position: absolute;
+  display: inline-block;
+  color: #848794;
+  bottom: -8rem;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #dddbff;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background: #0c122c;
+  }
+  body section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 65%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  body section .top-container {
+    width: 35%;
+    height: 40%;
+  }
+  body section .bottom-container {
+    width: 60%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body section .top-contents {
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body section .top-contents p {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  body section .bottom-contents {
+    width: 50%;
+  }
+  body section .bottom-contents p {
+    max-width: 35%;
+    position: absolute;
+    bottom: 195%;
+    right: 5%;
+  }
+  body section .triangle-path {
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+  body .desktop-background {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .hidden {
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */

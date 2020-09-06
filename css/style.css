@@ -281,6 +281,7 @@ section {
   body section .triangle-path {
     -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
             clip-path: polygon(100% 0, 0 0, 100% 100%);
+    visibility: visible;
   }
   body .desktop-background {
     visibility: visible;
